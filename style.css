@@ -1,0 +1,280 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #e3eafc 0%, #f5f7fa 100%);
+    color: #222;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 60px;
+    background: #283593;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(40,53,147,0.08);
+}
+
+.logo {
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffca28;
+}
+
+nav {
+    display: flex;
+    gap: 36px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover {
+    background: #ffca28;
+    color: #283593;
+}
+
+ul {
+    padding-left: 22px;
+}
+
+li {
+    margin-bottom: 7px;
+}
+
+a {
+    color: #283593;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #ffca28;
+}
+
+.hero-section {
+    background: #87b5fa;
+    padding: 48px 0 32px 0;
+    text-align: center;
+}
+.hero-section h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.hero-section p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+}
+
+.funciona-section {
+    background: #faf6ee;
+    padding: 48px 0 32px 0;
+    text-align: center;
+}
+.funciona-section h2 {
+    font-size: 2.5rem;
+    color: #3a3322;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.funciona-section p {
+    font-size: 1.5rem;
+    color: #333;
+    max-width: 900px;
+    margin: 0 auto 32px auto;
+}
+.funciona-imgs {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
+.funciona-imgs img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    background: #eee;
+}
+
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    max-width: 900px;
+    margin: 32px auto 0 auto;
+    padding: 0 16px;
+}
+.beneficio-card {
+    background: #fffbe9;
+    border: 1.5px solid #f3e2b8;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 28px 24px;
+    font-size: 1.25rem;
+    color: #3a3322;
+    font-weight: 500;
+    text-align: left;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.beneficio-card:hover {
+    box-shadow: 0 6px 24px rgba(40,53,147,0.10);
+    transform: translateY(-4px) scale(1.02);
+}
+#beneficios {
+    background: #faf6ee;
+    padding: 48px 0 32px 0;
+    text-align: center;
+}
+#beneficios h2 {
+    font-size: 2.5rem;
+    color: #3a3322;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+#descargar {
+    background: #faf6ee;
+    padding: 48px 0 32px 0;
+    text-align: center;
+}
+#descargar h2 {
+    font-size: 2.5rem;
+    color: #3a3322;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+#descargar p {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 28px;
+}
+.descarga-badges {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+.descarga-badges img {
+    height: 64px;
+    width: auto;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(40,53,147,0.08);
+    border-radius: 10px;
+    background: #fff;
+}
+.descarga-badges img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 24px rgba(40,53,147,0.13);
+}
+
+#contacto {
+    background: #faf6ee;
+    padding: 48px 0 32px 0;
+    text-align: center;
+}
+#contacto h2 {
+    font-size: 2.5rem;
+    color: #3a3322;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+#contacto p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background: #283593;
+    color: #fff;
+    text-align: center;
+    padding: 38px 0 38px 0;
+    font-size: 1.35rem;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    margin: 0;
+    box-shadow: 0 -2px 16px rgba(40,53,147,0.10);
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+        padding: 18px 10px;
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+    nav {
+        gap: 16px;
+    }
+    .hero-section, .funciona-section, #beneficios, #descargar, #contacto {
+        padding: 28px 0 18px 0;
+    }
+    .hero-section h1, .funciona-section h2, #beneficios h2, #descargar h2, #contacto h2 {
+        font-size: 1.5rem;
+    }
+    .funciona-section p, #descargar p, #contacto p {
+        font-size: 1rem;
+    }
+    .beneficios-grid {
+        gap: 12px;
+        padding: 0 4vw;
+    }
+    .beneficio-card {
+        padding: 16px 10px;
+        font-size: 1rem;
+    }
+    .descarga-badges {
+        gap: 12px;
+    }
+    .descarga-badges img {
+        height: 48px;
+    }
+    .footer {
+        font-size: 1rem;
+        padding: 18px 0 18px 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo {
+        font-size: 1.1rem;
+    }
+    nav a {
+        font-size: 0.95rem;
+        padding: 4px 6px;
+    }
+    .funciona-imgs img {
+        max-width: 98vw;
+        height: 120px;
+    }
+    .beneficio-card {
+        font-size: 0.95rem;
+        padding: 12px 6px;
+    }
+    .footer {
+        font-size: 0.95rem;
+        padding: 12px 0 12px 0;
+    }
+}
+
